@@ -48,6 +48,51 @@
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+            <tr onmouseout="gsfix3d_stop()" onmouseover="gsfix3d_start()">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <div class="two" id='gsfix3d_image'><video  width=100% muted autoplay loop>
+                  <source src="images/gsfix3d.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video></div>
+                  <img src='images/gsfix3d.png' width=100%>
+                </div>
+                <script type="text/javascript">
+                  function gsfix3d_start() {
+                    document.getElementById('gsfix3d_image').style.opacity = "1";
+                  }
+
+                  function gsfix3d_stop() {
+                    document.getElementById('gsfix3d_image').style.opacity = "0";
+                  }
+                  gsfix3d_stop()
+                </script>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://gsfix3d.github.io/">
+                  <span class="papertitle">GSFix3D: Diffusion-Guided Repair of Novel Views in Gaussian Splatting</span>
+                </a>
+                <br>
+                <strong>Jiaxin Wei</strong>, 
+                Stefan Leutenegger,
+                Simon Schaefer
+                <br>
+                <em>arXiv</em>, 2025
+                <br>
+                <a href="https://gsfix3d.github.io/">project page</a>
+                /
+                <a href="https://arxiv.org/pdf/2508.14717">paper</a>
+                /
+                <a href="https://www.youtube.com/watch?v=hF8xv8qDSi0">video</a>
+                /
+                <a href="https://github.com/GSFix3D/GSFix3D">code(coming soon)</a>           
+                <p></p>
+                <p>
+                  A flexible diffusion framework that removes artifacts and fills holes for novel views in 3DGS scenes.
+                </p>
+              </td>
+            </tr>
+
             <tr onmouseout="gsfusion_stop()" onmouseover="gsfusion_start()">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
